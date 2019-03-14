@@ -7,18 +7,19 @@
  * @id UCS_0_0
  */
 
-import Shared.MutableLocalVariable
-import Shared.LowerCamelCaseString
+import Shared.PascalCaseString
 
 from
-MutableLocalVariable mutableLocalVariable
+Class c
 
 where
-not mutableLocalVariable.getName() instanceof LowerCamelCaseString
+c.fromSource()
+and
+not c.getName() instanceof PascalCaseString
 
 select
-mutableLocalVariable, "Mutable local variable '$@' should follow PascalCasing.",
-mutableLocalVariable, mutableLocalVariable.toString()
+c, "Class '$@' name should follow PascalCasing.",
+c, c.toString()
 
 order
-by mutableLocalVariable asc
+by c asc

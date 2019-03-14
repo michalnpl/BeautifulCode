@@ -11,6 +11,6 @@ class LowerCamelCaseString extends string
     bindingset[this]
     LowerCamelCaseString()
     {
-        this.regexpMatch("[a-z]+((\\d)|([A-Z0-9][a-z0-9]+))*([A-Z])?")
+        this.regexpMatch("^[a-z]+(?:[A-Z0-9][a-z0-9]+)*$")
     }
 }
