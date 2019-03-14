@@ -5,6 +5,6 @@ Unified C# code style and syntax
 
 UCS_CATEGORYNUMBER_RULENUMBER
 
-## Categor 0: Naming conventions
+## Category 0: Naming conventions
 
 ### Rule 0: Class names should follow PascalCasing
