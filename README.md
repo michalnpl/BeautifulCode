@@ -8,3 +8,4 @@ UCS_CATEGORYNUMBER_RULENUMBER
 ## Category 0: Naming conventions
 
 ### Rule 0: Class names should follow PascalCasing
+### Rule 1: Mutable local variable should follow lowerCamelCase
