@@ -1,7 +1,7 @@
 import csharp
 
 /**
- * Pascal case string.
+ * Pascal case string, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.
  */
 class PascalCaseString extends string
 {
@@ -11,6 +11,6 @@ class PascalCaseString extends string
     bindingset[this]
     PascalCaseString()
     {
-        this.regexpMatch("^[A-Z][a-z]+(?:[A-Z][a-z]+)*$")
+        this.regexpMatch("^[^0-9a-z][a-zA-Z0-9]?([a-z0-9]+[A-Z]?)*$")
     }
 }

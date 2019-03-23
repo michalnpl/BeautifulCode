@@ -1,6 +1,6 @@
 /**
  * @name UCS_0_0
- * @description Class names should follow PascalCasing.
+ * @description Class name must follow Pascal casing, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.
  * @kind problem
  * @problem.severity error
  * @precision very high
@@ -18,7 +18,7 @@ and
 not c.getName() instanceof PascalCaseString
 
 select
-c, "Class '$@' name should follow PascalCasing.",
+c, "Class '$@' name should follow Pascal casing, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.",
 c, c.toString()
 
 order

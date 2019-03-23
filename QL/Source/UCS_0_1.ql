@@ -1,6 +1,6 @@
 /**
  * @name UCS_0_1
- * @description Mutable local variable should follow lowerCamelCase.
+ * @description Mutable local variable name must follow lower camel casing, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.
  * @kind problem
  * @problem.severity error
  * @precision very high
@@ -17,7 +17,7 @@ where
 not mutableLocalVariable.getName() instanceof LowerCamelCaseString
 
 select
-mutableLocalVariable, "Mutable local variable '$@' name should follow lower camel case string, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.",
+mutableLocalVariable, "Mutable local variable '$@' name should follow lower camel casing, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.",
 mutableLocalVariable, mutableLocalVariable.toString()
 
 order

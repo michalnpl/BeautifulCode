@@ -1,7 +1,7 @@
 import csharp
 
 /**
- * A mutable local variable.
+ * Camel case string, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.
  */
 class MutableLocalVariable extends LocalVariable
 {
