@@ -17,7 +17,7 @@ where
 not mutableLocalVariable.getName() instanceof LowerCamelCaseString
 
 select
-mutableLocalVariable, "Mutable local variable '$@' name should follow PascalCasing.",
+mutableLocalVariable, "Mutable local variable '$@' name should follow lower camel case string, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.",
 mutableLocalVariable, mutableLocalVariable.toString()
 
 order

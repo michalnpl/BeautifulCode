@@ -1,7 +1,7 @@
 import csharp
 
 /**
- * Lower camel case string.
+ * Lower camel case string, no abbreviations, not starting from number, no characters outside of English alphabet and Western Arabic numerals.
  */
 class LowerCamelCaseString extends string
 {
@@ -11,6 +11,6 @@ class LowerCamelCaseString extends string
     bindingset[this]
     LowerCamelCaseString()
     {
-        this.regexpMatch("^[a-z]+(?:[A-Z0-9][a-z0-9]+)*$")
+        this.regexpMatch("^[^0-9A-Z][a-zA-Z0-9]?([a-z0-9]+[A-Z]?)*$")
     }
 }
